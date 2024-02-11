@@ -1,0 +1,25 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(
+        #e9e9e9,
+        #ff3eff
+    );
+    background-size: 100% 50%;
+}
+button{
+    background-color: #bf3eff;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 15px 0;
+    width: 150px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+
