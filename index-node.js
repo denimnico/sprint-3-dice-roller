@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-app.use(express.static(__dirname + '/client'))
+app.use(express.static(__dirname + '/static'))
 
 const port = process.env.PORT || 3000
 app.get('/test', function(request, response) {
