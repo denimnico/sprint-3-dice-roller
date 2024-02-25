@@ -15,11 +15,11 @@ app.use(cors({ origin: '*' }))
 app.get('/about', (request, response) => {
 	console.log('Calling "/about" on the Node.js server.')
 	response.type('text/plain')
-	response.send('This is a website that utilizes server-side node.js to implement a dice rolling application.')
+	response.send('This is a website that uses node.js to implement a dice rolling application.')
 })
 
 app.get('/dice', (request, response) => {
-    console.log('Calling "/generateNum1To6" on the Node.js server.')
+    console.log('Calling "/dice" on the Node.js server.')
     
     let die = Math.floor(Math.random() * 6) + 1;
 
@@ -27,14 +27,12 @@ app.get('/dice', (request, response) => {
     response.send(die.toString());
 })
 
-// Custom 404 page.
 app.use((request, response) => {
     response.type('text/plain')
     response.status(404)
     response.send('404 - Not Found')
   })
   
-  // Custom 500 page.
   app.use((err, request, response, next) => {
     console.error(err.message)
     response.type('text/plain')
