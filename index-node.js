@@ -18,7 +18,7 @@ app.get('/about', (request, response) => {
 	response.send('This is a website that utilizes server-side node.js to implement a dice rolling application.')
 })
 
-app.get('/generateNum1To6', (request, response) => {
+app.get('/dice', (request, response) => {
     console.log('Calling "/generateNum1To6" on the Node.js server.')
     
     let die = Math.floor(Math.random() * 6) + 1;
