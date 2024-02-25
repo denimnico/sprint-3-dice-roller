@@ -1,4 +1,5 @@
-function dice() {
+async function dice() {
+  const url = "https://dice-roller-nodejs.azurewebsites.net/dice";
 	var msg = "you lose";
 	var dice = [];
 	dice[0] = Math.floor(Math.random()*6)+1;
