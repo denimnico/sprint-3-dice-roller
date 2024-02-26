@@ -18,8 +18,8 @@ app.get('/about', (request, response) => {
 	response.send('This is a website that uses node.js to implement a dice rolling application.')
 })
 
-app.get('/dice', (request, response) => {
-    console.log('Calling "/dice" on the Node.js server.')
+app.get('/die', (request, response) => {
+    console.log('Calling "/die" on the Node.js server.')
     
     let die = Math.floor(Math.random() * 6) + 1;
 
